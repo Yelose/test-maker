@@ -73,3 +73,55 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 * Deliverables
   - Link to the presentation of the project
   - Repository Link
+  
+  
+  </details>
+  <details><summary>User Flow</summary>
+    
+    
+```mermaid    
+    graph LR
+
+subgraph Static Elements
+    subgraph NAV
+        tests{{Tests}}
+        questions{{Questions}}
+        subjects{{Subjects}}
+        
+    end
+    subgraph BUTTONS
+        addSubject(fa:fa-plus subject)
+        addQuestion(fa:fa-plus question)
+        addNewTest(fa:fa-plus new test)
+        addFromExisting(fa:fa-plus add from existing)
+    end
+    addFromExisting-->submitExisting{Submit}-->db
+    addNewTest-->newTest
+    subgraph DATABASE
+        db[(Data Base)]
+        db-->tests
+        db---getUser
+    end
+
+    subgraph PAGES
+        signUp[[SIGN UP]]
+        login-->db
+        home[[HOME]]
+        tests[[TESTS]]
+        subjects[[SUBJECTS]]
+        newTest[[NEW TEST]]-->submitTest{submit}
+        signUp-->login{fa:fa-key log in}
+        signUp --> G{Sign up}
+        G --> add 
+        add[fa:fa-plus new member] --> db
+        getUser(fa:fa-user) --> home
+        submitTest-->db
+        home--list-->testList(Tests)
+        db--tests-->home
+
+    end
+end
+```  
+  
+  
+  </details>

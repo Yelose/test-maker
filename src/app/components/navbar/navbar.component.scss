@@ -1,0 +1,40 @@
+@import "src/vars/variables.scss";
+
+div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h1{
+    color: $title-color;
+    -webkit-text-stroke: 1px $btn-bg-color;
+    padding: $title-padding;
+    text-shadow: 1px 1px 2px $bg-dark;
+  }
+  nav{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-flow: row wrap;
+    background-color: $bg-very-light;
+    padding: $spacing-small;
+    margin-right: $spacing-small;
+    width: fit-content;
+    border-radius: 2px;
+    box-shadow: 2px 2px 3px $bg-dark;
+    a{
+      padding: 0 $spacing-small;
+      text-decoration: none;
+      color: $text-mid-dark;
+    }
+    input{
+      background-color: $bg-mid-light;
+      border-radius: 5px;
+      padding: 3px $spacing-small;
+      width: 15vw;
+      max-width: 200px;
+      min-width: 120px;
+      font-family: FontAwesome;
+      color: $text-mid-dark;
+    }
+  }
+}

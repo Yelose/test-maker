@@ -1,0 +1,11 @@
+@import "../vars/variables.scss";
+body{
+  height: 100vh;
+  max-width: 1400px;
+  margin: auto;
+  background-image: linear-gradient(hsla($main-color, 50%, 10%, 0.65), hsla($main-color, 90%, 75%, 0.2)), url("/assets/img/pila-de-libros-al-aire-libre.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+

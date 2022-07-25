@@ -1,0 +1,32 @@
+@import "../../../vars/variables.scss";
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  .top-btns-container{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: $spacing-medium $spacing-large;
+    button{
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-small;
+      width: 20vw;
+      max-width: 280px;
+      background-color: $btn-bg-color;
+      border-color: $btn-bg-color;
+      border-radius: 5px;
+      box-shadow: 2px 2px 4px $bg-dark;
+      padding: $spacing-small;
+      i{
+        color: $bg-light;
+        font-size: calc($font-size * 2);
+      }
+      p{
+        color: $bg-light;
+        font-size: $font-size;
+      }
+    }
+  }
+}

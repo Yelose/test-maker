@@ -1,0 +1,9 @@
+<header>
+  <app-navbar></app-navbar>
+  <div class="top-btns-container">
+    <button *ngFor="let button of buttons">
+      <i class="{{button.getIcon()}}"></i>
+      <p>{{button.getText()}}</p>
+    </button>
+  </div>
+</header>

@@ -8,11 +8,27 @@ import { ButtonClass } from 'src/app/models/button-class.model';
 })
 
 export class HeaderComponent implements OnInit {
-  buttons: ButtonClass[] = [
-    new ButtonClass(1, "add subject", "fa-solid fa-circle-plus"),
-    new ButtonClass(1, "add questions", "fa-solid fa-circle-plus"),
-    new ButtonClass(1, "add new test", "fa-solid fa-circle-plus"),
-    new ButtonClass(1, "create from existing", "fa-solid fa-circle-plus")
+  public buttons: ButtonClass[] = [
+    {
+      id: 1,
+      text: "add subject",
+      icon: "fa-solid fa-circle-plus"
+    },
+    {
+      id: 2,
+      text: "add questions",
+      icon: "fa-solid fa-circle-plus"
+    },
+    {
+      id: 3,
+      text: "add new test",
+      icon: "fa-solid fa-circle-plus"
+    },
+    {
+      id: 4,
+      text: "create from existing",
+      icon: "fa-solid fa-circle-plus"
+    }
   ]
   constructor() {
 

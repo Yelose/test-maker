@@ -1,6 +1,43 @@
-*{
+@import "./vars/variables.scss";
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Andika', sans-serif;
 }
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: 1px 1px 3px;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: $btn-bg-color;
+  border-radius: 10px;
+  border: 1px $bg-dark;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: $bg-mid-dark;
+}
+
+input {
+  border: none;
+  box-shadow: inset 1px 1px 2px 1px $bg-dark;
+}
+
+button {
+  background-color: $btn-bg-color;
+  border-color: $btn-bg-color;
+  border-radius: 5px;
+  box-shadow: 2px 2px 4px $bg-dark;
+  padding: $spacing-small;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

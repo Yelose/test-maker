@@ -11,7 +11,8 @@ import { SubjectsComponent } from './pages/subjects/subjects.component';
 import { QuestionsComponent } from './pages/questions/questions.component';
 import { HeaderComponent } from './components/header/header.component';
 import { HeaderButtonComponent } from './components/header-button/header-button.component';
-import { ButtonComponent } from './components/button/button.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MaterialModule } from './modules/material/material.module';
 
 @NgModule({
   declarations: [
@@ -24,11 +25,12 @@ import { ButtonComponent } from './components/button/button.component';
     QuestionsComponent,
     HeaderComponent,
     HeaderButtonComponent,
-    ButtonComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

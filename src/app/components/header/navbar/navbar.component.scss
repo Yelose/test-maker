@@ -9,7 +9,7 @@ div {
     -webkit-text-stroke: 1px $btn-bg-color;
     padding: $title-padding;
     text-shadow: 1px 1px 2px $bg-dark;
-    font-family: 'Mochiy Pop One', sans-serif;  }
+  }
   nav{
     display: flex;
     align-items: center;
@@ -25,12 +25,11 @@ div {
       padding: 0 $spacing-small;
       text-decoration: none;
       color: $text-mid-dark;
-      font-family: 'Mochiy Pop One', sans-serif;  }
     }
     input{
       background-color: $bg-mid-light;
       border-radius: 5px;
-      padding: 5px $spacing-small;
+      padding: 3px $spacing-small;
       width: 15vw;
       max-width: 200px;
       min-width: 120px;
@@ -38,4 +37,4 @@ div {
       color: $text-mid-dark;
     }
   }
-
+}

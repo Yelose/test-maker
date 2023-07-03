@@ -1,4 +1,5 @@
 @import "../../../vars/variables.scss";
+
 header {
   display: flex;
   flex-direction: column;
@@ -7,18 +8,13 @@ header {
     width: 100%;
     display: flex;
     justify-content: space-around;
-    padding: $spacing-medium $spacing-large;
+    padding: 1.5vh $spacing-large;
     button{
       display: flex;
       flex-direction: column;
-      gap: $spacing-small;
+      gap: 5px;
       width: 20vw;
       max-width: 280px;
-      background-color: $btn-bg-color;
-      border-color: $btn-bg-color;
-      border-radius: 5px;
-      box-shadow: 2px 2px 4px $bg-dark;
-      padding: $spacing-small;
       i{
         color: $bg-light;
         font-size: calc($font-size * 2);
@@ -27,6 +23,9 @@ header {
         color: $bg-light;
         font-size: $font-size;
       }
+    }
+    button:hover{
+      background-color: $bg-dark;
     }
   }
 }
